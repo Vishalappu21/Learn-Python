@@ -15,6 +15,12 @@ NOTE: Use SSH To clone the repo.
 	git clone git@github.com:Vishalappu21/basic-python-question.git
 
 RUN:
-NOTE: Go the program directory after cloning. Ex: cd system_base_path/basic-python-question/src
+
+NOTE: Go the program directory after cloning.
+Example:
+
+	cd system_base_path/basic-python-question/src
+
+ RUN Command:
 
 	python ./program_name.py
