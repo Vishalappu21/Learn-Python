@@ -6,8 +6,12 @@ Programs:
 2. Prime Number
 3. Fibonacci Sequence
 
-RUN:
+Clone Repository:
 
 Clone the basic-python-question Repo in to local and run the programs individually.
 
 	NOTE: To clone the repo, follow the git commands.
+
+RUN:
+
+	run commands
