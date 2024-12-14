@@ -1,3 +1,11 @@
+Project to learn the basic programming in python.
+
+Programs:
+
+1. Palindrome
+2. Prime Number
+3. Fibonacci Sequence
+
 # basic-python-question
 Palindrome:-
 def ispalindrome(s):
