@@ -10,8 +10,17 @@ Clone Repository:
 
 Clone the basic-python-question Repo in to local and run the programs individually.
 
-	NOTE: To clone the repo, follow the git commands.
+NOTE: Use SSH To clone the repo.
+
+	git clone git@github.com:Vishalappu21/basic-python-question.git
 
 RUN:
 
-	run commands
+NOTE: Go the program directory after cloning.
+Example:
+
+	cd system_base_path/basic-python-question/src
+
+ RUN Command:
+
+	python ./program_name.py
