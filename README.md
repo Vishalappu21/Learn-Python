@@ -7,6 +7,7 @@ Programs:
 3. Fibonacci Sequence
 4. Addition of 2 numbers
 5. Find Max of 2 numbers
+6. Armstrong Number
 
 Clone Repository:
 
