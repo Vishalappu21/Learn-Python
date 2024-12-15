@@ -14,18 +14,22 @@ def primes_in_range(start, end):
     return primes
 
 # Input from the user
-num = int(input("Enter the number: "))
-
+while True:
+    try:
+        num = int(input("Enter the number: "))
+        break
+    except ValueError:
+        print("Entered value is not a valied input, expecting a whole integer number. Please enter again!")
 if is_prime(num):
     print(f"{num} is a prime number")
 else:
     print(f"{num} is not a prime number")
 
-choice = input( "Press Y for 'Yes' N for 'No': ")
+choice = input(f"Do you want to find the prime numbers between the range of 0 and {num}? Press Y for 'Yes' N for 'No': ")
 
 if choice == 'Y':
-    prime_numbers = primes_in_range(0, 200)
-    print("The prime numbers between 0 and 70 are:")
+    prime_numbers = primes_in_range(0, num)
+    print(f"The prime numbers between 0 and {num} are:"),
     print(prime_numbers)
 else:
     print("Thank you!")
