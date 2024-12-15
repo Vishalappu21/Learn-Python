@@ -5,6 +5,8 @@ Programs:
 1. Palindrome
 2. Prime Number
 3. Fibonacci Sequence
+4. Addition of 2 numbers
+5. Find Max of 2 numbers
 
 Clone Repository:
 
