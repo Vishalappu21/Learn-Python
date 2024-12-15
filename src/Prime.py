@@ -1,26 +1,31 @@
-num_int = int(input("Enter the number: "))
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
 
-if num_int == 1:
-    print(f"{num_int} is not a prime number.")
-    print("Thank you")
-elif num_int > 1:
-    for n in range(2, num_int):
-        if num_int % n == 0:
-            print(f"{num_int} is not a prime number.")
-            break
-    else:
-        print(f"{num_int} is a prime number.")
+def primes_in_range(start, end):
+    primes = []
+    for num in range(start, end + 1):
+        if is_prime(num):
+            primes.append(num)
+    return primes
 
-    
-    print(f"Prime numbers between 0 and {num_int}:")
-    for i in range(2, num_int + 1):
-        is_prime = True
-        for j in range(2, int(i**0.5) + 1):
-            if i % j == 0:
-                is_prime = False
-                break
-        if is_prime:
-            print(i, end=" ")
+# Input from the user
+num = int(input("Enter the number: "))
 
-if num_int > 1 and not all(num_int % n != 0 for n in range(2, num_int)):
-    print("\nThank you")
+if is_prime(num):
+    print(f"{num} is a prime number")
+else:
+    print(f"{num} is not a prime number")
+
+choice = input( "Press Y for 'Yes' N for 'No': ")
+
+if choice == 'Y':
+    prime_numbers = primes_in_range(0, 200)
+    print("The prime numbers between 0 and 70 are:")
+    print(prime_numbers)
+else:
+    print("Thank you!")
